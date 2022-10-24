@@ -50,7 +50,7 @@ export default function Head() {
           component={motion.p}
           className="textani"
           sx={{
-            fontSize: { xs: "70px", md: "100px" },
+            fontSize: { xs: "80px", md: "100px" },
             color: "#171717",
             fontFamily: theme.fonts.logo,
           }}
@@ -89,7 +89,7 @@ export default function Head() {
           viewport={{ once: true }}
           className="textani"
           sx={{
-            fontSize: { xs: "70px", md: "100px" },
+            fontSize: { xs: "80px", md: "100px" },
             color: "#171717",
             fontFamily: theme.fonts.logo,
           }}
