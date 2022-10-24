@@ -281,7 +281,7 @@ export default function UserPost({
                   src={media.photo.url}
                   width="100%"
                   height="auto"
-                  maxHeight="400px"
+                  maxHeight="550px"
                 />
               )}
               {media.video && (
@@ -289,7 +289,7 @@ export default function UserPost({
                   component="video"
                   width="100%"
                   height="auto"
-                  maxHeight="400px"
+                  maxHeight="550px"
                   controls
                   autoPlay={false}
                   muted

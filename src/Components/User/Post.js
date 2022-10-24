@@ -283,7 +283,7 @@ export default function Post({
                   src={media.photo.url}
                   width="100%"
                   height="auto"
-                  maxHeight="400px"
+                  maxHeight="550px"
                 />
               )}
               {media.video && (
@@ -291,7 +291,7 @@ export default function Post({
                   component="video"
                   width="100%"
                   height="auto"
-                  maxHeight="400px"
+                  maxHeight="550px"
                   controls
                   autoPlay={false}
                   muted
