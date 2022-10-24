@@ -17,7 +17,7 @@ export default function Head() {
       sx={{ overflow: "hidden", minHeight: "100vh" }}
       direction="column"
       justifyContent='flex-start'
-      spacing={{xs:"50px",md:"180px"}}
+      spacing={{xs:"45px",md:"180px"}}
     >
       <Stack>
         <Container>
@@ -50,7 +50,7 @@ export default function Head() {
           component={motion.p}
           className="textani"
           sx={{
-            fontSize: { xs: "88px", md: "100px" },
+            fontSize: { xs: "70px", md: "100px" },
             color: "#171717",
             fontFamily: theme.fonts.logo,
           }}
@@ -89,7 +89,7 @@ export default function Head() {
           viewport={{ once: true }}
           className="textani"
           sx={{
-            fontSize: { xs: "88px", md: "100px" },
+            fontSize: { xs: "70px", md: "100px" },
             color: "#171717",
             fontFamily: theme.fonts.logo,
           }}
