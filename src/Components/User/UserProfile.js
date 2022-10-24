@@ -1,4 +1,12 @@
-import { Avatar, Box, Dialog, IconButton, Stack } from "@mui/material";
+import {
+  Avatar,
+  Box,
+  Dialog,
+  IconButton,
+  Stack,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import { theme } from "../../Theme/NewTheme";
 import { RiCloseFill } from "react-icons/ri";
 import UserPosts from "./UserPosts";
@@ -9,6 +17,8 @@ export default function UserProfile({
   currentuser,
   RefetchName,
 }) {
+  const themo = useTheme();
+  const fullScreen = useMediaQuery(themo.breakpoints.down("sm"));
   const closedia = () => {
     RefetchName((prev) => false);
     setOpen(false);
@@ -18,6 +28,7 @@ export default function UserProfile({
       open={open}
       onClose={closedia}
       fullWidth={true}
+      fullScreen={fullScreen}
       sx={{
         " .MuiPaper-root": {
           backgroundColor: "black",
