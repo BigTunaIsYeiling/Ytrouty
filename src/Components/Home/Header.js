@@ -17,7 +17,7 @@ export default function Head() {
       sx={{ overflow: "hidden", minHeight: "100vh" }}
       direction="column"
       justifyContent='flex-start'
-      spacing={"180px"}
+      spacing={{xs:"50px",md:"180px"}}
     >
       <Stack>
         <Container>
