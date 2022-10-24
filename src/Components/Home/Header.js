@@ -16,8 +16,8 @@ export default function Head() {
     <Stack
       sx={{ overflow: "hidden", minHeight: "100vh" }}
       direction="column"
-      justifyContent='flex-start'
-      spacing={{xs:"45px",md:"180px"}}
+      justifyContent="flex-start"
+      spacing={{ xs: "45px", md: "180px" }}
     >
       <Stack>
         <Container>
@@ -25,12 +25,12 @@ export default function Head() {
             direction="row"
             alignItems="center"
             justifyContent="space-between"
-            paddingY={{xs:"18px",md:"25px"}}
+            paddingY={{ xs: "18px", md: "25px" }}
           >
             <Box
               component={motion.img}
               src={require("./logo2.png")}
-              width={{xs:"54px",md:"70px"}}
+              width={{ xs: "54px", md: "70px" }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ type: "spring", duration: 1 }}
@@ -50,9 +50,11 @@ export default function Head() {
           component={motion.p}
           className="textani"
           sx={{
-            fontSize: { xs: "90px", md: "100px" },
+            fontSize: { xs: "65px", md: "100px" },
             color: "#171717",
             fontFamily: theme.fonts.logo,
+            width: { xs: "100%", md: "auto" },
+            textAlign: { xs: "center", md: "left" },
           }}
           transition={{
             duration: 1,
@@ -89,9 +91,11 @@ export default function Head() {
           viewport={{ once: true }}
           className="textani"
           sx={{
-            fontSize: { xs: "80px", md: "100px" },
+            fontSize: { xs: "65px", md: "100px" },
             color: "#171717",
             fontFamily: theme.fonts.logo,
+            width: { xs: "100%", md: "auto" },
+            textAlign: { xs: "center", md: "left" },
           }}
         >
           &nbsp;make&nbsp;
@@ -119,7 +123,7 @@ export default function Head() {
             viewport={{ once: true }}
             className="textani"
             sx={{
-              fontSize: { xs: "70px", md: "100px" },
+              fontSize: { xs: "65px", md: "100px" },
               color: "#171717",
               fontFamily: theme.fonts.logo,
             }}
