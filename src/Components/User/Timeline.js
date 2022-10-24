@@ -215,7 +215,7 @@ export default function Timeline({
       <Stack
         direction="column"
         alignItems="center"
-        width={{ xs: "85%", sm: "70%", md: "45%" }}
+        width={{ xs: "85%", sm: "70%", md: "45%", xl: "35%" }}
         paddingX={{ xs: "0px", sm: "30px" }}
         spacing="20px"
         paddingBottom={{ xs: "1px", md: "10px" }}
