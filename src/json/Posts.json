@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "avater": "aa",
+    "username": "ahmedanany",
+    "time": "1 day ago",
+    "body": "Hi guys"
+  },
+  {
+    "id": 2,
+    "avater": "a",
+    "username": "JohnDar",
+    "time": "14 minutes ago",
+    "body": "is that the new Twitter"
+  },
+  {
+    "id": 3,
+    "avater": "aaa",
+    "username": "Domigo",
+    "time": "13 hours ago",
+    "body": "Now i can die in peace"
+  },
+  {
+    "id": 4,
+    "avater": "bb",
+    "username": "Gebsy",
+    "time": "3 hours ago",
+    "body": "Life could be good but you build in capitalism country BTW"
+  }
+]
