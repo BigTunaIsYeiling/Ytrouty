@@ -31,7 +31,14 @@ import { MdOutlinePermMedia } from "react-icons/md";
 import { theme } from "../../Theme/NewTheme";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-export default function Timeline({ user, setUser, setSigned, SetNav,fetchP,setFetch }) {
+export default function Timeline({
+  user,
+  setUser,
+  setSigned,
+  SetNav,
+  fetchP,
+  setFetch,
+}) {
   const [video, setread] = useState(null);
   const regexp = /^data:video/;
   const navigate = useNavigate();
@@ -211,11 +218,7 @@ export default function Timeline({ user, setUser, setSigned, SetNav,fetchP,setFe
         width={{ xs: "85%", sm: "70%", md: "45%" }}
         paddingX={{ xs: "0px", sm: "30px" }}
         spacing="20px"
-<<<<<<< HEAD
         paddingBottom={{ xs: "1px", md: "10px" }}
-=======
-        paddingBottom={{xs:"1px", md:"10px"}}
->>>>>>> 5711597c1d169a93afa7bfc2ce959d9244e0ea25
       >
         <Stack
           direction="column"
@@ -402,21 +405,13 @@ export default function Timeline({ user, setUser, setSigned, SetNav,fetchP,setFe
                     fontFamily: theme.fonts.heading,
                     fontWeight: "600",
                     width: "100%",
-<<<<<<< HEAD
                     borderRadius: "4px 4px 0px 0px",
-=======
-                    borderRadius:"4px 4px 0px 0px"
->>>>>>> 5711597c1d169a93afa7bfc2ce959d9244e0ea25
                   }}
                 >
                   Post
                 </Button>
                 {spin && (
-<<<<<<< HEAD
                   <Box
-=======
-                  <Box 
->>>>>>> 5711597c1d169a93afa7bfc2ce959d9244e0ea25
                     component={CircularProgress}
                     size={27}
                     color="#ffdf00"
@@ -438,7 +433,6 @@ export default function Timeline({ user, setUser, setSigned, SetNav,fetchP,setFe
                 paddingBottom="10px"
                 width="100%"
               >
-<<<<<<< HEAD
                 <Button
                   component="label"
                   width="100%"
@@ -451,30 +445,13 @@ export default function Timeline({ user, setUser, setSigned, SetNav,fetchP,setFe
                     },
                   }}
                 >
-=======
-                <Button component="label" width="100%"
-                  sx={{
-                      backgroundColor:"black",
-                      ":hover": {
-                        backgroundColor: "black",
-                       }
-                    }}>
->>>>>>> 5711597c1d169a93afa7bfc2ce959d9244e0ea25
                   <input
                     hidden
                     accept="image/*,video/*"
                     type="file"
                     onChange={handlePostMedia}
                   />
-<<<<<<< HEAD
                   <MdOutlinePermMedia color="white" size="22px" />
-=======
-                  <Box
-                    component="img"
-                    src={require("./photo.png")}
-                    width="30px"
-                  />
->>>>>>> 5711597c1d169a93afa7bfc2ce959d9244e0ea25
                 </Button>
               </Stack>
             </Stack>
