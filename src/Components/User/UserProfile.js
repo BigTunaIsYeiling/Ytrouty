@@ -35,7 +35,12 @@ export default function UserProfile({
         },
       }}
     >
-      <Stack direction="column" width="100%" position={"relative"}>
+      <Stack
+        direction="column"
+        width="100%"
+        position={"relative"}
+        padding={{ xs: "10px 4px 0px 4px", md: "0px 0px 0px 0px" }}
+      >
         <Box
           component={IconButton}
           onClick={closedia}

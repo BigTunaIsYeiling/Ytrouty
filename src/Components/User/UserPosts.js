@@ -18,7 +18,7 @@ export default function UserPosts({ currentuser, id }) {
     }
   }, [fetchP]);
   return (
-    <Stack direction="column" width="80%" spacing="10px" className="posts">
+    <Stack direction="column" width="100%" spacing="10px" className="posts">
       {posts
         ? posts.map((post, i) => (
             <motion.div
