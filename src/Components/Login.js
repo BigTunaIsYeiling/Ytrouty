@@ -28,10 +28,10 @@ export default function Login({ setSigned }) {
   const handleChange = (e) => {
     setSignData({ ...SignData, [e.target.name]: e.target.value });
   };
-  const SignIn = (e) => {
+  const SignIn = async (e) => {
     e.preventDefault();
     setspin(true);
-    axios
+    await axios
       .post("https://ytrouty-app-api.onrender.com/users/SignIn", SignData, {
         withCredentials: true,
       })
