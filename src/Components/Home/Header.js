@@ -1,4 +1,3 @@
-// import axios from "axios";
 import { Box, Container, Stack, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import { theme } from "../../Theme/NewTheme";

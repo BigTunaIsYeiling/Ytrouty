@@ -10,7 +10,7 @@ export default function Posts({ user, fetchP, setFetch }) {
     if (!fetchP) {
       setTimeout(() => {
         axios
-          .get("https://ytrouty-app-api.onrender.com/posts", {
+          .get("https://vast-red-prawn-sari.cyclic.app/posts", {
             withCredentials: true,
           })
           .then((response) => setposts(response.data.posts))

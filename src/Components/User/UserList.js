@@ -16,7 +16,7 @@ export default function UserList({
   const [user, setUser] = useState(null);
   const GetProfile = async () => {
     await axios
-      .get(`https://ytrouty-app-api.onrender.com/users/${id}`)
+      .get(`https://vast-red-prawn-sari.cyclic.app/users/${id}`)
       .then((res) => setUser(res.data))
       .finally(setOpen(true));
   };

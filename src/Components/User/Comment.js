@@ -61,12 +61,12 @@ export default function Comment({
   }, [likes]);
   const likeComment = async () => {
     await axios
-      .post(`https://ytrouty-app-api.onrender.com/posts/comment/${postId}/${commentID}`)
+      .post(`https://vast-red-prawn-sari.cyclic.app/posts/comment/${postId}/${commentID}`)
       .finally(setFetch((prev) => false));
   };
   const deleteComment = async () => {
     await axios
-      .delete(`https://ytrouty-app-api.onrender.com/posts/comment/${postId}/${commentID}`)
+      .delete(`https://vast-red-prawn-sari.cyclic.app/posts/comment/${postId}/${commentID}`)
       .then(setOpen(false))
       .finally(setFetch((prev) => false));
   };

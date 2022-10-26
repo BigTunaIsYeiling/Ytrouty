@@ -11,7 +11,7 @@ export default function UserPosts({ currentuser, id }) {
     if (!fetchP) {
       setTimeout(() => {
         axios
-          .get(`https://ytrouty-app-api.onrender.com/users/profile/${id}`)
+          .get(`https://vast-red-prawn-sari.cyclic.app/users/profile/${id}`)
           .then((res) => setPosts(res.data.userPosts))
           .finally(setFetch(true));
       }, 2000);

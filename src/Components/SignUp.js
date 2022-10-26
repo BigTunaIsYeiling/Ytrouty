@@ -32,7 +32,7 @@ export default function SignUp({ setSigned }) {
     e.preventDefault();
     setspin(true);
     axios
-      .post("https://ytrouty-app-api.onrender.com/users/Register", SignData, {
+      .post("https://vast-red-prawn-sari.cyclic.app//users/Register", SignData, {
         withCredentials: true,
       })
       .then((res) => {

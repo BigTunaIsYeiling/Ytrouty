@@ -21,7 +21,7 @@ export default function SearchUsers({ currentuser,setFetch }) {
   useEffect(() => {
     if (firstrn) {
       axios
-        .get("https://ytrouty-app-api.onrender.com/users/")
+        .get("https://vast-red-prawn-sari.cyclic.app/users/")
         .then((res) => {
           setusers(res.data.users);
         })
