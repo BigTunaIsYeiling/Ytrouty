@@ -59,7 +59,11 @@ export default function Post({
   const deletePost = async () => {
     await axios
       .delete(`https://vast-red-prawn-sari.cyclic.app/posts/${postId}`)
-      .then(setFetch((prev) => false))
+      .then(() =>
+        setTimeout(() => {
+          setFetch((prev) => false);
+        }, 2000)
+      )
       .finally(setOpen(false));
   };
   const likepost = async () => {
@@ -77,7 +81,10 @@ export default function Post({
   };
   const addComment = async () => {
     await axios
-      .post(`https://vast-red-prawn-sari.cyclic.app/posts/comment/${postId}`, formComment)
+      .post(
+        `https://vast-red-prawn-sari.cyclic.app/posts/comment/${postId}`,
+        formComment
+      )
       .finally(setFetch((prev) => false));
     setform((prev) => {
       return { ...prev, body: "" };
