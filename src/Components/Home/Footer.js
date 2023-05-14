@@ -56,7 +56,7 @@ export default function Footer() {
                 transition={{ type: "spring", duration: 1, delay: 0.1 }}
                 viewport={{ once: true }}
               >
-                B_TheRTuna
+                BT
               </Typography>
             </Stack>
             <Stack
