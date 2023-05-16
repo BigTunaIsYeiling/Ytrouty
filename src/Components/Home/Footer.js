@@ -62,8 +62,8 @@ export default function Footer() {
             <Stack
               direction="row"
               alignItems="center"
-              marginLeft={{ xs: "none", md: "auto" }}
-              marginRight={{ xs: "none", md: "none" }}
+              marginLeft={{ xs: "0", md: "auto" }}
+              marginRight={{ xs: "0", md: "0" }}
               spacing="20px"
               marginTop={{ xs: "50px", md: "0px" }}
             >
