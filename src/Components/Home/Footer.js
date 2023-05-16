@@ -2,7 +2,7 @@ import { Container, Stack, Typography, Box, Link } from "@mui/material";
 import { motion } from "framer-motion";
 import { theme } from "../../Theme/NewTheme";
 import { GrTwitter } from "react-icons/gr";
-import { RiLinkedinFill,RiFacebookFill } from "react-icons/ri";
+import { RiLinkedinFill, RiFacebookFill } from "react-icons/ri";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
 export default function Footer() {
   return (
@@ -63,7 +63,7 @@ export default function Footer() {
               direction="row"
               alignItems="center"
               marginLeft={{ xs: "none", md: "auto" }}
-              marginRight={{ xs: "none", md: "auto" }}
+              marginRight={{ xs: "none", md: "none" }}
               spacing="20px"
               marginTop={{ xs: "50px", md: "0px" }}
             >
