@@ -32,9 +32,13 @@ export default function SignUp({ setSigned }) {
     e.preventDefault();
     setspin(true);
     axios
-      .post("https://vast-red-prawn-sari.cyclic.app//users/Register", SignData, {
-        withCredentials: true,
-      })
+      .post(
+        "https://vast-red-prawn-sari.cyclic.app//users/Register",
+        SignData,
+        {
+          withCredentials: true,
+        }
+      )
       .then((res) => {
         if (res.status === 200) {
           setspin(false);
@@ -71,6 +75,7 @@ export default function SignUp({ setSigned }) {
         sx={{
           fontFamily: theme.fonts.logo,
           fontSize: "30px",
+          textAlign: "center",
         }}
       >
         Create Your free Account
