@@ -36,7 +36,7 @@ export default function Footer() {
                 transition={{ type: "spring", duration: 1, delay: 0.1 }}
                 viewport={{ once: true }}
               >
-                Design by
+                Developed by
               </Typography>
               <Typography
                 fontWeight="500"
@@ -56,7 +56,7 @@ export default function Footer() {
                 transition={{ type: "spring", duration: 1, delay: 0.1 }}
                 viewport={{ once: true }}
               >
-                BT
+                Ahmed Anany
               </Typography>
             </Stack>
             <Stack
