@@ -32,7 +32,7 @@ export default function Main({ Signed, setSigned }) {
   const location = useLocation();
   const getUser = async () => {
     await axios
-      .get("https://vast-red-prawn-sari.cyclic.app/users/user", {
+      .get("https://ytroutyback-production.up.railway.app/users/user", {
         withCredentials: true,
       })
       .then((res) => {
@@ -47,7 +47,7 @@ export default function Main({ Signed, setSigned }) {
   };
   const refresh = async () => {
     await axios
-      .get("https://vast-red-prawn-sari.cyclic.app/users/refresh", {
+      .get("https://ytroutyback-production.up.railway.app/users/refresh", {
         withCredentials: true,
       })
       .then((res) => {
@@ -71,7 +71,7 @@ export default function Main({ Signed, setSigned }) {
     return () => clearInterval(interval);
   }, [location]);
   const Logout = async () => {
-    await axios.post("https://vast-red-prawn-sari.cyclic.app/users/logout").then((res) => {
+    await axios.post("https://ytroutyback-production.up.railway.app/users/logout").then((res) => {
       setAnchorEl(null);
       setUser(null);
       setSigned((prev) => false);
@@ -85,7 +85,7 @@ export default function Main({ Signed, setSigned }) {
   });
   const GetProfile = async () => {
     await axios
-      .get(`https://vast-red-prawn-sari.cyclic.app/users/${user.id}`)
+      .get(`https://ytroutyback-production.up.railway.app/users/${user.id}`)
       .then((res) => setCurrent(res.data))
       .finally(() => {
         setOpen(true);

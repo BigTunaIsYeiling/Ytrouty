@@ -121,7 +121,7 @@ export default function Timeline({
     formdata.append("body", postform.body);
     formdata.append("postmedia", PostMedia);
     await axios
-      .post("https://vast-red-prawn-sari.cyclic.app/posts/", formdata)
+      .post("https://ytroutyback-production.up.railway.app/posts/", formdata)
       .then((res) => {
         if (res.status === 200) {
           setspin(false);
@@ -160,7 +160,7 @@ export default function Timeline({
     formdata.append("confirmpass", confirmpass);
     formdata.append("avatarImage", avatarImage);
     await axios
-      .put("https://vast-red-prawn-sari.cyclic.app/users/update", formdata)
+      .put("https://ytroutyback-production.up.railway.app/users/update", formdata)
       .then(async (res) => {
         if (res.status === 200) {
           setspin1(false);
@@ -185,7 +185,7 @@ export default function Timeline({
   };
   const DeleteUser = async () => {
     await axios
-      .delete("https://vast-red-prawn-sari.cyclic.app/users/deleteAccount")
+      .delete("https://ytroutyback-production.up.railway.app/users/deleteAccount")
       .then((res) => {
         if (res.status == 200) {
           setUser(null);

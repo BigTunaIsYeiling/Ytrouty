@@ -58,13 +58,13 @@ export default function UserPost({
   };
   const deletePost = async () => {
     await axios
-      .delete(`https://vast-red-prawn-sari.cyclic.app/posts/${postId}`)
+      .delete(`https://ytroutyback-production.up.railway.app/posts/${postId}`)
       .then(setFetch((prev) => false))
       .finally(setOpen(false));
   };
   const likepost = async () => {
     await axios
-      .post(`https://vast-red-prawn-sari.cyclic.app/posts/like/${postId}`)
+      .post(`https://ytroutyback-production.up.railway.app/posts/like/${postId}`)
       .finally(setFetch((prev) => false));
   };
   const [formComment, setform] = useState({
@@ -77,7 +77,7 @@ export default function UserPost({
   };
   const addComment = async () => {
     await axios
-      .post(`https://vast-red-prawn-sari.cyclic.app/posts/comment/${postId}`, formComment)
+      .post(`https://ytroutyback-production.up.railway.app/posts/comment/${postId}`, formComment)
       .finally(setFetch((prev) => false));
     setform((prev) => {
       return { ...prev, body: "" };

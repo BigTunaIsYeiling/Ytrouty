@@ -16,7 +16,7 @@ export default function UserList({
   const [user, setUser] = useState(null);
   const GetProfile = async () => {
     await axios
-      .get(`https://vast-red-prawn-sari.cyclic.app/users/${id}`)
+      .get(`https://ytroutyback-production.up.railway.app/users/${id}`)
       .then((res) => setUser(res.data))
       .finally(setOpen(true));
   };

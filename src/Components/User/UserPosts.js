@@ -11,7 +11,7 @@ export default function UserPosts({ currentuser, id }) {
     if (!fetchP) {
       setTimeout(() => {
         axios
-          .get(`https://vast-red-prawn-sari.cyclic.app/users/profile/${id}`)
+          .get(`https://ytroutyback-production.up.railway.app/users/profile/${id}`)
           .then((res) => setPosts(res.data.userPosts))
           .finally(setFetch(true));
       }, 2000);

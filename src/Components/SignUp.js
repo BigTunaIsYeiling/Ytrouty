@@ -33,7 +33,7 @@ export default function SignUp({ setSigned }) {
     setspin(true);
     axios
       .post(
-        "https://vast-red-prawn-sari.cyclic.app//users/Register",
+        "https://ytroutyback-production.up.railway.app//users/Register",
         SignData,
         {
           withCredentials: true,

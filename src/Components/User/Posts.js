@@ -10,7 +10,7 @@ export default function Posts({ user, fetchP, setFetch }) {
     if (!fetchP) {
       setTimeout(() => {
         axios
-          .get("https://vast-red-prawn-sari.cyclic.app/posts", {
+          .get("https://ytroutyback-production.up.railway.app/posts", {
             withCredentials: true,
           })
           .then((response) => setposts(response.data.posts))
